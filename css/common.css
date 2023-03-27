@@ -1,0 +1,9 @@
+body {
+    max-width: min(1000px,99vw);
+    min-width: 100px;
+}
+
+.bi {
+    margin-left: 3px;
+    margin-right: 3px;
+}
