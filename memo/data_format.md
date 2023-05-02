@@ -1,13 +1,13 @@
 ```json
 [
     {
-        "sid": "p092qyr4c93ugtcufq3aby",
+        "sid": "p092qy",
         "name": "<<<store_name>>>",
         "ruby": "<<<ruby>>>",
         "num_medal": 1234567890,
         "num_available_days": [0,30],
         "deadline": [9999,12,31,23,59,59], 
-        "deposit_date": [9999,12,31,23,59,59],
+        "final_deposit_date": [9999,12,31,23,59,59],
         "num_data": 1,
         "log":[
             {

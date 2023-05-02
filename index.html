@@ -40,25 +40,18 @@
     </nav>
 
     <p class="alert alert-warning">
-        現在、開発中です。正常に動作はしません。
+        現在開発中のため、正常に動作しなかったり、無効化されている機能があります。
     </p>
 
-    <button type="button" class="btn btn-info" onclick="location.href='./data_view.html'"><i class="bi bi-file-text"
+    <button type="button" class="btn btn-info" onclick="location.href='./data_view.html'" disabled><i class="bi bi-file-text"
             style="font-size: 1rem;"></i>データの表示</button>
 
-    <table class="table">
+    <table class="table" id="view_table">
         <tr>
             <th>店舗名</th>
             <th>期限</th>
             <th>枚数</th>
             <th>編集</th>
-        </tr>
-        <tr>
-            <td>ゲームセンター　メダルメダル　テスト店</td>
-            <td>2023/3/31</td>
-            <td>10,000枚</td>
-            <td><button type="button" class="btn btn-secondary" onclick="edit_open('73g7qf')"><i class="bi bi-pencil"
-                        style="font-size: 1.1rem;"></i></button></td>
         </tr>
     </table>
 
@@ -72,6 +65,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="./script/edit_open.js"></script>
+    <script type="module" src="./script/view/view.js"></script>
     <script src="./script/theme/theme_load.js"></script>
 </body>
 
