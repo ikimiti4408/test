@@ -16,8 +16,8 @@ function main() {
         let d_date = new Date(deadline[0] + '/' + deadline[1] + '/' + deadline[2])
         let days_left = Math.floor((d_date - now_date) / (1000 * 60 * 60 * 24));
         let countdown_text = "";
-        if (days_left > 1) countdown_text = '残り' + days_left + '日';
-        else if (days_left == 1) countdown_text = '期限最終日';
+        if (days_left >= 1) countdown_text = '残り' + days_left + '日';
+        else if (days_left == 0) countdown_text = '期限最終日';
         else countdown_text = '期限切れ'
 
         add_html += '<tr>';
