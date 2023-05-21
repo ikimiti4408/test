@@ -52,6 +52,23 @@
                 この現象は仕様です。Sample v1での改善は予定されていません。
             </p>
         </div>
+        <div class="mb-3">
+            <p>
+                データのダウンロード・復元
+            </p>
+            <p class="alert alert-danger mt-1 mb-0">
+                復元する際、ブラウザ上のデータは削除され、バックアップデータで上書きされます。
+            </p>
+            <p class="alert alert-info mb-1">
+                復元には事前にダウンロードしたバックアップデータが必要です。
+            </p>
+            <div>
+                <button type="button" class="btn btn-info m-2" id="btn-download"><i class="bi bi-download"
+                        style="font-size: 1rem;"></i>ダウンロード</button>
+                <button type="button" class="btn btn-danger m-2" id="btn-repair"><i class="bi bi-pencil-square"
+                        style="font-size: 1rem;"></i>復元</button>
+            </div>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -59,6 +76,7 @@
         crossorigin="anonymous"></script>
     <script src="./script/theme/theme_load.js"></script>
     <script src="./script/theme/theme_change.js"></script>
+    <script type="module" src="./script/backup.js"></script>
 
 </body>
 
