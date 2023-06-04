@@ -1,5 +1,6 @@
 import { LSCtrl } from "../lsctrl.js";
 
+const day_of_week_format = ['日','月','火','水','木','金','土'];
 let tb_elem = document.getElementById('view_table');
 
 function main() {
@@ -22,7 +23,7 @@ function main() {
 
     add_html += '<tr>';
     add_html += '<td>' + name + '</td>';
-    add_html += '<td>' + countdown_text + '（' + deadline[1] + '/' + deadline[2] + '）</td>';
+    add_html += '<td>' + countdown_text + '（' + deadline[1] + '/' + deadline[2] + ' ' + day_of_week_format[d_date.getDay()] + '）</td>';
     add_html += '<td>' + Number(num_medal).toLocaleString() + '枚' + '</td>';
     add_html += '<td>' + '<button type="button" class="btn btn-secondary" onclick="edit_open(\'' + sid + '\')"><i class="bi bi-pencil" style="font-size: 1.1rem;"></i></button>' + '</td>';
     add_html += '</tr>';
