@@ -1,4 +1,5 @@
 # isMeM sample v1
+メダル家計簿ソフト
 
 ## 開発者
 ikimiti4408  
